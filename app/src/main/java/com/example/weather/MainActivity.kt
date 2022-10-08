@@ -68,14 +68,14 @@ class MainActivity : AppCompatActivity() {
         citynameTv=findViewById(R.id.TVCityName)
         TempTv=findViewById(R.id.TVtemp)
         conditionTv=findViewById(R.id.TVcondition)
-        cityEdit=findViewById(R.id.LLedit)
+        cityEdit=findViewById(R.id.EditCity)
         backiv=findViewById(R.id.IVBack)
         searchiv=findViewById(R.id.IVSearch)
         iconiv=findViewById(R.id.IVicon)
         weatherrv=findViewById(R.id.RVWeather)
 
         //initialising the adapter
-        val weatherRVModalArrayList = ArrayList<Any?>()
+        weatherRVmodelArrayList = ArrayList<WeatherRVmodel>()
         weatherRVadapter = WeatherRVadapter(this, weatherRVmodelArrayList)
         weatherrv.setAdapter(weatherRVadapter)
 
